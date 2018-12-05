@@ -7,11 +7,10 @@ body {
     background-image:url(../../assets/images/dust_scratches.png);
     background-repeat: repeat-x, repeat-y;
     background-size: cover;
-    overflow: hidden;
+    overflow: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Background pattern from Toptal Subtle Patterns */
-
 
 header {
     border-bottom: 2px solid #cccccc;
@@ -59,7 +58,6 @@ h2 {
 
 }
 
-
 .nav {
     float: left;
     margin: 10px;
@@ -71,15 +69,31 @@ h2 {
     display: block;
     clear: both;
 }
+
 main {
     clear: both;
     border: 1px solid #dddddd;
     background-color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
     margin-left: 15%;
+    padding: 10px; 
     max-width: 960px;
+    height: 100%;
 }
 
+footer {    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 5px solid #4aaaa5;
+    background-color: #666666;
+    height: 35px;
+    width: 100%;
+    margin-top: 25px;
+}
+/* Everything above is on all three pages. */
+
+/* Begin index.html */
 
 #ash {
     float: left;
@@ -99,26 +113,127 @@ main {
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
+    color: #777777;
     line-height: 25px;
     width: 60%;
     float: left;
     
 }
 
- ::after {
+ main ::after {
     content: "";
     display: block;
     clear: both;
 }
+/* End index.html  */
 
 
-footer {
+
+/* Begin contact.html  */
+
+#contact {
     clear: both;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 5px solid #4aaaa5;
-    background-color: #666666;
-    height: 35px;
-    width: 100%;
 }
+
+label {
+    margin-left: 25px;
+    color: #777777;
+    font-size: 16px;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 12px 20px 12px 20px;
+    margin: 8px 25px 8px 25px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+  }
+
+textarea {
+    width: 90%;
+    margin: 8px 25px 8px 25px;
+    height: 250px;
+    padding: 12px 20px 12px 20px;
+    color: #777777;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    resize: none;
+
+}
+
+#submit {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    line-height: 100%;
+    padding: 5px;
+    margin: 25px;
+    max-width: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* End contact.html  */
+
+
+/*  Begin portfolio.html  */
+
+#portfolio {
+    clear: both;
+}
+
+.wrapper {
+    margin: 25px;
+    height: 100%;
+    position: relative;
+}
+
+.box {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    height: 50px;
+    width: 200px;
+    margin: 20px;   
+    padding: 10px;
+    text-align: center;
+}
+
+#box1 {
+    z-index: 1;
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+#box2 {
+    z-index: 1;
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+#box3 {
+    z-index: 1;
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+}
+ #box4 {
+    z-index: 1;
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+ }
+
+ #box5 {
+    z-index: 1;
+    margin: 25px;
+    height: 200px;
+    width: 200px;
+ }
+
+
+/* End portfolio.html  */
+
+
+
