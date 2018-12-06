@@ -120,7 +120,7 @@ footer {
     
 }
 
- main ::after {
+ ::after {
     content: "";
     display: block;
     clear: both;
@@ -147,7 +147,7 @@ input[type=text] {
     margin: 8px 25px 8px 25px;
     box-sizing: border-box;
     border: 1px solid #dddddd;
-  }
+}
 
 textarea {
     width: 90%;
@@ -184,56 +184,50 @@ textarea {
 
 .wrapper {
     margin: 25px;
-    height: 100%;
+    height: 100%;   
     position: relative;
 }
 
 .box {
+    height: 200px;
+    width: 180px;
+    position: relative;
+    margin: 30  px;
+    /* float: left; */
+}
+
+
+.banner { 
+    position: absolute; 
+    left: 0;
+    top: 130px;
     color: #ffffff;
     background-color: #4aaaa5;
-    height: 50px;
-    width: 200px;
-    margin: 20px;   
+    height: 40px;
+    width: 100%;  
     padding: 10px;
     text-align: center;
 }
 
-#box1 {
-    z-index: 1;
-    margin: 25px;
-    height: 200px;
-    width: 200px;
+#b1 {
+    float: left;
 }
 
-#box2 {
-    z-index: 1;
-    margin: 25px;
-    height: 200px;
-    width: 200px;
+#b2 {
+    float: left;
 }
 
-#box3 {
-    z-index: 1;
-    margin: 25px;
-    height: 200px;
-    width: 200px;
+#b3 {
+    clear: both;
+    float: left;
 }
- #box4 {
-    z-index: 1;
-    margin: 25px;
-    height: 200px;
-    width: 200px;
- }
-
- #box5 {
-    z-index: 1;
-    margin: 25px;
-    height: 200px;
-    width: 200px;
- }
 
 
-/* End portfolio.html  */
+#b4 {
+    float: left;
+}
 
-
+#b5 {
+    clear: both;
+}
 
